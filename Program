@@ -1,0 +1,26 @@
+using System;
+
+public class Program
+{
+    public static void Main()
+    {
+        // ایجاد شیء Student و استفاده از سازنده
+        Student myStudent = new Student("Abolfazl", 14042480051L, 15.5);
+
+        // تعیین مقدار نام دانش‌آموز
+        myStudent.StudentName = "Abolfazl";
+
+        // اجرای متد دانش‌آموز
+        myStudent.Study();
+
+        Console.WriteLine("---");
+
+        // ایجاد شیء Teacher و استفاده از سازنده
+        Teacher myTeacher = new Teacher("Dr. Hossein", "Programming", 10);
+
+        // اجرای متد معلم
+        myTeacher.Teach();
+
+        Console.WriteLine("All tasks completed successfully!");
+    }
+}
